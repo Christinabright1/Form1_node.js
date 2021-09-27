@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>A Minha pagina</title>
+    <link href="/stylesheets/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <h3>Formulário de encomenda</h3>
+<p>Para fazer a sua encomenda preencha o formulario que se segue</p>
+
+<form action="/encomenda" method="POST"
+><!--Caminho para enviar nosso encomenda-->
+<!--Inscrição-->
+<fieldset class="container">
+<legend>Inscrição:</legend>
+<label for="nome_id">Nome: </label>
+<input type="text" name="nome" id="nome_id" placeholder="Qual o
+seu nome?"  required>
+<br>
+<br>
+<label for="apelido_id">Apelido: </label>
+<input type="text" name="apelido" id="apelido_id"
+placeholder="Qual o seu apelido?" maxlength="10" required>
+<br>
+<br>
+<label for="email_id">E-mail: </label>
+<input type="email" name="email" id="email_id" placeholder="Qual o
+seu email?">
+<br>
+<br>
+<label for="tel_id">Contato: </label>
+
+<input type="tel" name="tel" id="tel_id" placeholder="Qual o seu contato?"
+pattern="[0-9]{9}" maxlength="9" minlength="9" >
+  </fieldset>
+
+<br>
+<br>
+<!--Escola Pizza-->
+
+<fieldset class="container">
+<legend>Escola Pizza:</legend>
+<label for="pizza">Pizza</label><br>
+<input type="checkbox" id="pizza1" name="pizza1" value="Margherita">
+ <label for="pizza1">Margherita</label><br>
+
+ <input type="checkbox" id="pizza2" name="pizza2" value="Margherita">
+ <label for="pizza2">Rustica</label><br>
+
+ <input type="checkbox" id="pizza3" name="pizza3" value="Margherita">
+ <label for="pizza3">Primavera</label><br>
+
+ <input type="checkbox" id="pizza4" name="pizza4" value="Margherita">
+ <label for="pizza4">Calzone</label>
+ <br>
+ <br>
+ <label>Tipo de Massa:</label><br><br>
+ <select name="pizza" id="pizza">
+  <option value="Normal">Normal</option>
+  <option value="Medium">Medium</option>
+  <option value="BiG">Big</option>
+  <option value="Extra Big">Extra Big</option>
+ </select><br><br>
+    <label>Ingredientes Extra:</label><br><br>
+    <input type="checkbox" id="ingredient1" name="ingredient1" value="Azeitonas">
+ <label for="ingredient1">Margherita</label><br>
+
+ <input type="checkbox" id="pizza2" name="ingredient2" value="Cebola">
+ <label for="ingredient2">Rustica</label><br>
+
+ <input type="checkbox" id="pizza3" name="ingredient3" value="Milho">
+ <label for="ingredient3">Primavera</label><br>
+
+ <input type="checkbox" id="pizza4" name="ingredient4" value="Camarão">
+ <label for="ingredient4">Calzone</label>
+ <br>
+  <input type="checkbox" id="pizza4" name="ingredient5" value="Ananas">
+ <label for="ingredient5">Ananas</label>
+ <br>
+ <br>
+</fieldset>
+
+<br><br>
+<!--Pagamento-->
+
+<fieldset class="container">
+<legend>Pagamento: </legend>
+<label for="ingredient4">Morada: </label><br>
+<textarea id="w3review" name="morada" rows="2" cols="50" 
+placeholder="Morada da fatura"></textarea><br><br>
+
+<label for="Codigo Postal">Codigo Postal: </label>
+<input type="tel" name="tel" id="codePostal_id" placeholder="0000-000"
+pattern="[0-9]{4}-[0-9]{3}" maxlength="7" minlength="7" ><br><br>
+<label for="NIF">NIF</label>
+<input type="tel" name="nif" id="nif_id" placeholder="NIF da fatura"
+pattern="[0-9]{7}" maxlength="7" minlength="7" ><br><br>
+<label for="pagamento">Metodo de pagamento</label><br><br>
+<input type="radio" id="pagamento1" >
+<label for="pagamento">Dinheiro</label>
+<input type="radio" id="pagamento2" >
+<label for="pagamento">Multibanco</label>
+<input type="radio" id="pagamento3">
+<label for="pagamento">MBWay</label>
+</fieldset> <br>
+
+<input type="reset" value="Limpar" id="limpar">
+<input type="submit" value="Confirmar" id="confirmar">
+
+</form>
+  </body>
+</html>
